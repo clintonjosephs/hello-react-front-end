@@ -1,10 +1,10 @@
 import { applyMiddleware, combineReducers, configureStore } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
-import { reducer as greetingReducer } from './greeting/greetActions';
+import greetingReducer from './greeting/greetActions';
 
 const reducer = combineReducers({
-    greetingReducer,
+  greetingReducer,
 });
 
 // creating a store

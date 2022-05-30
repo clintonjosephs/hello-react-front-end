@@ -23,7 +23,7 @@ export const apiError = (payload) => ({
 
 // reducer
 
-const reducer = (state = greetingState, { type, payload }) => {
+const greetingReducer = (state = greetingState, { type, payload }) => {
   switch (type) {
     case GET_RANDOM_GREETING:
       return { ...state, greeting: payload };
@@ -34,4 +34,4 @@ const reducer = (state = greetingState, { type, payload }) => {
   }
 };
 
-export default reducer;
+export default greetingReducer;
